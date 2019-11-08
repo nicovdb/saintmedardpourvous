@@ -96,12 +96,6 @@ p {
   color: white;
 }
 
-.bg-rainbow {
-  background: -webkit-gradient(linear, left top, right top, color-stop(33%, rgb(135, 210, 40)), color-stop(33%, rgb(230, 50, 40)), color-stop(66%, rgb(245, 165, 60)));
-  background: -o-linear-gradient(left, rgb(135, 210, 40) 33%, rgb(230, 50, 40) 33% 66%, rgb(245, 165, 60) 66%);
-  background: linear-gradient(to right, rgb(135, 210, 40) 33%, rgb(230, 50, 40) 33% 66%, rgb(245, 165, 60) 66%);
-}
-
 .banner-top {
   height: 1rem;
 }
@@ -118,4 +112,16 @@ p {
 .border-white {
   border-top: 3px solid white;
   border-bottom: 3px solid white;
+}
+
+.bg-gradient-green {
+  background-color: rgb(135, 210, 40);
+}
+
+.bg-gradient-red {
+  background-color: rgb(230, 50, 40);
+}
+
+.bg-gradient-orange {
+  background-color: rgb(245, 165, 60);
 }
