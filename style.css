@@ -82,11 +82,14 @@ p {
 .btn-ecolo {
   background-color: rgb(135, 210, 40);
   color: white;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 1.2rem;
+  transition: 0.5s;
 }
 
 .btn-ecolo:hover {
   color: white;
+  transform: scale(1.04);
 }
 
 .bg-orange {
@@ -114,14 +117,21 @@ p {
   border-bottom: 3px solid white;
 }
 
+.bg-light-perso {
+  background-color: rgb(240, 240, 240);
+}
+
 .bg-gradient-green {
   background-color: rgb(135, 210, 40);
+  color: white;
 }
 
 .bg-gradient-red {
   background-color: rgb(230, 50, 40);
+  color: white;
 }
 
 .bg-gradient-orange {
   background-color: rgb(245, 165, 60);
+  color: white;
 }
