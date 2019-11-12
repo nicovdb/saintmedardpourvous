@@ -39,9 +39,23 @@ p {
   font-size: 2rem;
 }
 
+.btn-ecolo {
+  background-color: rgb(135, 210, 40);
+  color: white;
+  font-weight: normal;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+.btn-ecolo:hover {
+  color: white;
+  transform: scale(1.04);
+}
+
 @media (max-width: 600px) {
   h1 { font-size: 1.7rem; }
   p { font-size: 1.2rem; }
+  .btn-ecolo { font-size: 1rem; }
 }
 
 .minus {
@@ -79,18 +93,6 @@ p {
   color: white;
 }
 
-.btn-ecolo {
-  background-color: rgb(135, 210, 40);
-  color: white;
-  font-weight: normal;
-  font-size: 1.2rem;
-  transition: 0.5s;
-}
-
-.btn-ecolo:hover {
-  color: white;
-  transform: scale(1.04);
-}
 
 .bg-orange {
   background-size: cover;
