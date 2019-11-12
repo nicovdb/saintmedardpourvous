@@ -117,10 +117,6 @@ p {
   border-bottom: 3px solid white;
 }
 
-.bg-light-perso {
-  background-color: rgb(240, 240, 240);
-}
-
 .bg-gradient-green {
   background-color: rgb(135, 210, 40);
   color: white;
