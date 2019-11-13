@@ -138,7 +138,7 @@ p {
               rgba(255,255,255,0.8) 0%,
               rgba(255,255,255,0.8)50%), url('images/bg-rs.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 
 .esperluette {
@@ -163,10 +163,27 @@ p {
   object-fit: cover;
   object-position: center;
   height: 100%;
+  border-radius: 2px;
 }
 
 .bg-light-green {
   background-image: url("images/fond-vert.png");
   background-size: cover;
   background-position: center;
+}
+
+.carousel-control-next-icon {
+    background-image: url('images/next.png') !important;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('images/previous.png') !important;
+    width: 40px;
+    height: 40px;
+}
+
+.small-radius {
+  border-radius: 2px;
 }
