@@ -24,7 +24,7 @@ body {
   font-family: 'Blogger_Sans';
 }
 
-.container {
+.home {
   min-height: calc(100vh - 13rem);
 }
 
@@ -39,15 +39,14 @@ p {
   font-size: 2rem;
 }
 
-.btn-ecolo {
-  background-color: rgb(135, 210, 40);
+.btn-perso {
   color: white;
   font-weight: normal;
   font-size: 1.2rem;
   transition: 0.5s;
 }
 
-.btn-ecolo:hover {
+.btn-perso:hover {
   color: white;
   transform: scale(1.04);
 }
@@ -132,4 +131,42 @@ p {
 .bg-gradient-orange {
   background-color: rgb(245, 165, 60);
   color: white;
+}
+
+.bg-rs {
+  background: linear-gradient(135deg,
+              rgba(255,255,255,0.8) 0%,
+              rgba(255,255,255,0.8)50%), url('images/bg-rs.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.esperluette {
+  font-size: 4rem;
+  margin-bottom: -20px;
+}
+
+.twitter-timeline {
+  height: 500px;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.big-padding-top {
+  padding-top: 8rem;
+}
+
+.photos img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
+.bg-light-green {
+  background-image: url("images/fond-vert.png");
+  background-size: cover;
+  background-position: center;
 }
