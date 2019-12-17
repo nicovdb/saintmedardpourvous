@@ -187,3 +187,14 @@ p {
 .small-radius {
   border-radius: 2px;
 }
+
+.position-up {
+  position: relative;
+  bottom: 70px;
+}
+
+@media (max-width: 600px) {
+  .position-up {
+    bottom: 50px;
+  }
+}
