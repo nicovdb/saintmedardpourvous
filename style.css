@@ -1,3 +1,5 @@
+/*Fonts*/
+
 @font-face {
   font-family: 'Blogger_Sans';
   src: url('fonts/Blogger_Sans-Bold.otf');
@@ -19,14 +21,16 @@
   font-style: normal;
 }
 
+/*Basis*/
+
 body {
   color: rgb(90, 90, 90);
   font-family: 'Blogger_Sans';
 }
 
-.home {
+/*.home {
   min-height: calc(100vh - 13rem);
-}
+}*/
 
 h1 {
   font-family: 'Blogger_Sans';
@@ -39,16 +43,30 @@ p {
   font-size: 2rem;
 }
 
+.smaller-p {
+  font-size: 1.2rem !important;
+}
+
+.border-white {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+/*Button*/
+
 .btn-perso {
   color: white;
   font-weight: normal;
+  padding: 8px 21px;
   font-size: 1.2rem;
-  transition: 0.5s;
+  transition: all .15s ease;
+  box-shadow: 0 2px 14px rgba(126,87,88,0.1), 0 3px 6px rgba(0,0,0,0.08);
 }
 
 .btn-perso:hover {
+  box-shadow: 0 6px 20px rgba(126,87,88,0.1), 0 6px 10px rgba(0,0,0,0.08);
   color: white;
-  transform: scale(1.04);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 600px) {
@@ -60,6 +78,18 @@ p {
 .minus {
   font-size: 1rem;
 }
+
+.superminus {
+  font-size: 0.7rem;
+}
+
+.big-padding-y {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+
+/*colors*/
 
 .red {
   color: rgb(230, 50, 40);
@@ -73,50 +103,13 @@ p {
   color: rgb(245, 165, 60);
 }
 
-.bg-red {
-  background-size: cover;
-  background-position: center;
-  background-image: url("images/popu.jpg");
-  color: white;
-}
-
-.bg-green {
-  background-size: cover;
-  background-position: center;
-  background-image: url("images/ecolo.jpg");
-  color: white;
+.gray {
+  color: rgb(90, 90, 90);
 }
 
 .bg-real-green {
   background-color: rgb(135, 210, 40);
   color: white;
-}
-
-
-.bg-orange {
-  background-size: cover;
-  background-position: center;
-  background-image: url("images/solid.jpg");
-  color: white;
-}
-
-.banner-top {
-  height: 1rem;
-}
-
-.banner-bottom {
-  height: 12rem;
-}
-
-.logo-parti {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.border-white {
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
 }
 
 .bg-gradient-green {
@@ -134,6 +127,52 @@ p {
   color: white;
 }
 
+
+/*Trio descriptif*/
+
+.bg-red {
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/popu.jpg");
+  color: white;
+}
+
+.bg-green {
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/ecolo.jpg");
+  color: white;
+}
+
+.bg-orange {
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/solid.jpg");
+  color: white;
+}
+
+/*Banner multicolore*/
+
+.banner-top {
+  height: 1rem;
+}
+
+.banner-bottom {
+  height: 12rem;
+}
+
+
+/*logos*/
+
+.logo-parti {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+
+/*Background réseaux sociaux*/
+
 .bg-rs {
   background: linear-gradient(135deg,
               rgba(255,255,255,0.8) 0%,
@@ -141,6 +180,8 @@ p {
   background-size: cover;
   background-position: right;
 }
+
+/*merde*/
 
 .esperluette {
   font-size: 4rem;
@@ -151,38 +192,8 @@ p {
   height: 500px;
 }
 
-.navbar {
-  height: 5rem;
-  background-color: white;
-}
-
 .big-padding-top {
   padding-top: 8rem;
-}
-
-.photos img {
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  border-radius: 2px;
-}
-
-.bg-light-green {
-  background-image: url("images/fond-vert.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.carousel-control-next-icon {
-    background-image: url('images/next.png') !important;
-    width: 40px;
-    height: 40px;
-}
-
-.carousel-control-prev-icon {
-    background-image: url('images/previous.png') !important;
-    width: 40px;
-    height: 40px;
 }
 
 .small-radius {
@@ -198,4 +209,231 @@ p {
   .position-up {
     bottom: 50px;
   }
+}
+
+.bg-light-green {
+  background-image: url("images/fond-vert.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/*photos*/
+
+.photos img {
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/*carousel*/
+
+.carousel-control-next-icon {
+    background-image: url('images/next.png') !important;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('images/previous.png') !important;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*navbar*/
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.smaller-i {
+  font-size: 10px;
+}
+
+/*avatar*/
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/*banner*/
+.banner {
+  background-image: url(images/cover.jpg);
+  height: 455px;
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
+@media (max-width: 750px) {
+  .banner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner {
+    height: 200px;
+  }
+}
+
+/*candidature*/
+.candidature {
+  display: flex;
+}
+
+.candidature p {
+  font-size: 1.2rem;
+}
+
+.candidature img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.candidature-text {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .candidature {
+    display: block;
+  }
+  .candidature img {
+    margin-bottom: 3rem;
+  }
+
+  .candidature-text {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .candidature img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/*Réunions*/
+.reunions img {
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+@media (max-width: 700px) {
+  .proposer iframe {
+   width: 500px;
+   height: 1850px;
+  }
+
+  .don iframe {
+    width: 500px;
+    height: 2100px;
+  }
+
+  .rejoindre iframe {
+    width: 500px;
+    height: 1950px;
+  }
+}
+
+@media (max-width: 500px) {
+  .proposer iframe {
+   width: 320px;
+   height: 2000px;
+  }
+
+  .don iframe {
+    width: 320px;
+    height: 2450px;
+  }
+
+  .rejoindre iframe {
+    width: 320px;
+    height: 2150px;
+  }
+}
+
+.rs iframe {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.programme {
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.programme h2 {
+  background-color: white;
+  padding: 1rem;
+  color: rgb(90, 90, 90);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(230, 50, 40);
+  /*border-radius: 3px;*/
+}
+
+input.form-control {
+  /*height: 80px !important;*/
+  padding: 2rem 1rem;
+}
+
+textarea.form-control {
+  padding: 1.2rem 1rem;
+}
+
+.form-control {
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.contact-legals {
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 1.2rem 1rem;
+}
+
+.bg-contact {
+  background-image: url(images/contact.jpg);
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+.video iframe {
+  max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.mentions p {
+  font-size: 1rem;
 }
