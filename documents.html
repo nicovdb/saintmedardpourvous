@@ -38,15 +38,19 @@
           <a class="nav-link dropdown-toggle" id="projectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Le projet</a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="projectDropdown">
             <a class="dropdown-item" href="documents/lettre.pdf" target="_blank">Lettre de candidature</a>
-            <a class="dropdown-item" href="documents.html#programme">Programme</a>
+            <a class="dropdown-item" href="documents.html#programme">Programme</a><a class="dropdown-item" href="documents.html#liste">Liste</a>
             <a class="dropdown-item" href="documents.html">Tous les documents</a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="participation.html">Je participe</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="photos.html">Photos/vidéos</a>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="photosDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Photos/vidéos</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="photosDropdown">
+            <a class="dropdown-item" href="photos.html">Vidéos</a>
+            <a class="dropdown-item" href="photos.html#soutiens">Soutiens</a><a class="dropdown-item" href="photos.html#photos">Photos</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html#contact">Contact</a>
@@ -80,42 +84,57 @@
         </a>
       </div>
     </div>
-    <div id="programme"></div>
-    <h1 >Le programme</h1>
+    <!-- <div id="programme"></div> -->
+    <section id="programme">
+      <h1 >Le programme</h1>
+      <div class="row mt-4">
+        <div class="col-12 col-md-6">
+          <a class="text-decoration-none" href="documents/transport1.pdf" target="_blank">
+            <div class="programme" style="background-image: url(documents/transport1.jpg">
+              <h2>Transports</h2>
+              <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a class="text-decoration-none" href="documents/democratie1.pdf" target="_blank">
+            <div class="programme" style="background-image: url(documents/democratie1.jpg">
+              <h2>Démocratie locale</h2>
+              <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a class="text-decoration-none" href="documents/ecologie1.pdf" target="_blank">
+            <div class="programme" style="background-image: url(documents/ecologie1.jpg">
+              <h2>Écologie</h2>
+              <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a class="text-decoration-none" href="documents/solidarites1.pdf" target="_blank">
+            <div class="programme" style="background-image: url(documents/solidarites1.jpg">
+              <h2>Les solidarités</h2>
+              <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="liste"></div>
     <div class="row mt-4">
-      <div class="col-12 col-md-6">
-        <a class="text-decoration-none" href="documents/transport1.pdf" target="_blank">
-          <div class="programme" style="background-image: url(documents/transport1.jpg">
-            <h2>Transports</h2>
-            <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a class="text-decoration-none" href="documents/democratie1.pdf" target="_blank">
-          <div class="programme" style="background-image: url(documents/democratie1.jpg">
-            <h2>Démocratie locale</h2>
-            <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a class="text-decoration-none" href="documents/ecologie1.pdf" target="_blank">
-          <div class="programme" style="background-image: url(documents/ecologie1.jpg">
-            <h2>Écologie</h2>
-            <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a class="text-decoration-none" href="documents/solidarites1.pdf" target="_blank">
-          <div class="programme" style="background-image: url(documents/solidarites1.jpg">
-            <h2>Les solidarités</h2>
-            <div class="btn-perso shadow btn bg-gradient-red">Lire le programme</div>
+      <h1 class="mx-auto">La liste</h1>
+      <div class="col-12 col-md-10 offset-md-1">
+        <a class="text-decoration-none" href="documents/liste.pdf" target="_blank">
+          <div class="programme" style="background-image: url(documents/liste.png">
+            <div class="btn-perso shadow btn bg-gradient-red">Voir la liste</div>
           </div>
         </a>
       </div>
     </div>
+
     <h1>Les affiches</h1>
     <div class="row mt-4">
       <div class="col-12 col-md-6">

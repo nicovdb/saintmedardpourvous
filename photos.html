@@ -37,15 +37,19 @@
           <a class="nav-link dropdown-toggle" id="projectDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Le projet</a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="projectDropdown">
             <a class="dropdown-item" href="documents/lettre.pdf" target="_blank">Lettre de candidature</a>
-            <a class="dropdown-item" href="documents.html#programme">Programme</a>
+            <a class="dropdown-item" href="documents.html#programme">Programme</a><a class="dropdown-item" href="documents.html#liste">Liste</a>
             <a class="dropdown-item" href="documents.html">Tous les documents</a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="participation.html">Je participe</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="photos.html">Photos/vidéos</a>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" id="photosDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Photos/vidéos</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="photosDropdown">
+            <a class="dropdown-item" href="photos.html">Vidéos</a>
+            <a class="dropdown-item" href="photos.html#soutiens">Soutiens</a><a class="dropdown-item" href="photos.html#photos">Photos</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html#contact">Contact</a>
@@ -54,191 +58,208 @@
     </div>
   </div>
 
-
   <div class="container-fluid bg-light-green pt-5 pb-5 px-4 text-center">
-    <div class="text-center video mb-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/oUA4GPTPACc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="text-center video mb-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/fD2sfXrdUCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="text-center video mb-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/I33D2rIja6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="text-center video mb-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SBb-fwLA54w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="text-center video mb-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/_vdfkYBx2-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="text-center video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KRblEx983go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <section>
+      <h1>Vidéos</h1>
+      <div class="text-center video mb-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oUA4GPTPACc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="text-center video mb-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fD2sfXrdUCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="text-center video mb-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/I33D2rIja6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="text-center video mb-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SBb-fwLA54w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="text-center video mb-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_vdfkYBx2-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="text-center video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KRblEx983go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
 
-    <div class="row photos mt-5">
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo43.jpg" alt="réunion publique" class="w-100">
+    <section id="soutiens" class="mt-5">
+      <h1>Soutiens</h1>
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 pb-4">
+          <img src="images/soutiens/soutien1.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-md-8 offset-md-2">
+          <img src="images/soutiens/soutien2.jpg" alt="" class="w-100">
+        </div>
       </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo44.jpg" alt="réunion publique" class="w-100">
+    </section>
+
+    <section id="photos" class="mt-5">
+      <h1>Photos</h1>
+      <div class="row photos">
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo43.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo44.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo45.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo46.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo47.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo48.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo49.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo50.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo51.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo52.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo53.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo54.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo55.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo56.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo57.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo58.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo59.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo60.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo61.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo36.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo37.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo38.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo39.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo40.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo41.jpg" alt="réunion publique" class="w-100" style="object-position: 50% 15%">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo42.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo1.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo2.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo3.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo4.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo5.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo6.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo7.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo8.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo9.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo11.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo12.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo13.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo14.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo15.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo16.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo17.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo18.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo19.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo20.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo21.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo22.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo23.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo24.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo29.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo30.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo31.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo33.jpg" alt="réunion publique" class="w-100">
+        </div>
+        <div class="col-12 col-md-4 p-2">
+          <img src="images/photos/photo35.jpg" alt="réunion publique" class="w-100">
+        </div>
       </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo45.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo46.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo47.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo48.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo49.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo50.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo51.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo52.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo53.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo54.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo55.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo56.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo57.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo58.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo59.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo60.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo61.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo36.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo37.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo38.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo39.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo40.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo41.jpg" alt="réunion publique" class="w-100" style="object-position: 50% 15%">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo42.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo1.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo2.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo3.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo4.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo5.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo6.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo7.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo8.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo9.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo11.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo12.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo13.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo14.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo15.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo16.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo17.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo18.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo19.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo20.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo21.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo22.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo23.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo24.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo29.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo30.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo31.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo33.jpg" alt="réunion publique" class="w-100">
-      </div>
-      <div class="col-12 col-md-4 p-2">
-        <img src="images/photos/photo35.jpg" alt="réunion publique" class="w-100">
-      </div>
-    </div>
+    </section>
   </div>
 
   <div class="container text-center py-5 footer">

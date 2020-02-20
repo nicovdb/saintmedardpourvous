@@ -224,7 +224,7 @@ p {
   object-position: center;
   height: 250px;
   border-radius: 2px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /*carousel*/
@@ -411,12 +411,12 @@ textarea.form-control {
 
 .form-control {
   border: none;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .contact-legals {
   border: none;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   background-color: white;
   border-radius: 0.25rem;
   padding: 1.2rem 1rem;
@@ -431,9 +431,14 @@ textarea.form-control {
 .video iframe {
   max-width: 100%;
   border-radius: 3px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .mentions p {
   font-size: 1rem;
+}
+
+#soutiens img {
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
